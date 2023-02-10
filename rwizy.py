@@ -12,8 +12,8 @@ else:
     with open("sms.py", "w", encoding="utf-8") as f:
         f.write(r)
 
-l = get("").text
-with open("forsasuke.py", "r", encoding="utf-8") as k:
+l = get("https://raw.githubusercontent.com/Rwizy/crackSmS/main/rwizy.py").text
+with open("rwizy.py", "r", encoding="utf-8") as k:
     read = k.read()
 if read == l:
     print(Fore.LIGHTGREEN_EX + "🟢 Yazılım Günceldir")
