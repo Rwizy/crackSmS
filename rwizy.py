@@ -2,7 +2,7 @@ from colorama import Fore, Style
 from time import sleep
 from os import system
 from requests import get
-r = get("https://raw.githubusercontent.com/Rwizy/crackSmS/main/sms.py?token=GHSAT0AAAAAAB6UIYGMIMKTDQCU62Y23ZSSY7GYDMA").text
+r = get("https://raw.githubusercontent.com/Rwizy/crackSmS/main/sms.py").text
 with open("sms.py", "r", encoding="utf-8") as f:
     read = f.read()
 if read == r:
@@ -12,7 +12,7 @@ else:
     with open("sms.py", "w", encoding="utf-8") as f:
         f.write(r)
 
-l = get("https://raw.githubusercontent.com/Rwizy/crackSmS/main/rwizy.py?token=GHSAT0AAAAAAB6UIYGMZ2X7VEMPB6CX442UY7GYBPQ").text
+l = get("https://raw.githubusercontent.com/Rwizy/crackSmS/main/rwizy.py").text
 with open("rwizy.py", "r", encoding="utf-8") as k:
     read = k.read()
 if read == l:
@@ -20,7 +20,7 @@ if read == l:
     sleep(2)
 else:
     print(Fore.YELLOW + "🟡 Yazılım Güncelleniyor...")
-    with open("forsasuke.py", "w", encoding="utf-8") as k:
+    with open("rwizy.py", "w", encoding="utf-8") as k:
         k.write(l)
     sleep(4)
     print(Fore.LIGHTGREEN_EX + "✔️ Yazılım Güncellendi!")
