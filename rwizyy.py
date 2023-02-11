@@ -12,7 +12,7 @@ else:
     with open("sms.py", "w", encoding="utf-8") as f:
         f.write(r)
 
-l = get("https://raw.githubusercontent.com/Rwizy/crackSmS/main/rwizy.py").text
+l = get("https://raw.githubusercontent.com/Rwizy/crackSmS/main/rwizyy.py").text
 with open("rwizy.py", "r", encoding="utf-8") as k:
     read = k.read()
 if read == l:
